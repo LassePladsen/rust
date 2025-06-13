@@ -9,7 +9,7 @@ fn read_line() -> String {
     let mut buffer = String::new();
     io::stdin()
         .read_line(&mut buffer)
-        .expect("Could not read line from stdin");
+        .unwrap();
     String::from(buffer.trim())
 }
 
